@@ -38,8 +38,8 @@ router.get('/:id', async (req, res) => {
 //creates a new tag
 router.post('/', async (req, res) => {
   try {
-    const tagData = await Tag.create(req.body);
-    res.status(200).json(tagData);
+    const newTag = await Tag.create(req.body);
+    res.status(200).json(newTag);
   } catch (err) {
     res.status(400).json(err);
   }
@@ -69,18 +69,18 @@ router.put('/:id', async (req, res) => {
 //deletes a tag by its id
 router.delete('/:id', async (req, res) => {
   try {
-    const tagData = await Tag.destroy({
+    const deleteTag = await Tag.destroy({
       where: {
         id: req.params.id
       }
     });
 
-    if (!tagData) {
+    if (!deleteTag) {
       res.status(404).json({ message: 'No tag found with this id!' });
       return;
     }
 
-    res.status(200).json(tagData);
+    res.status(200).json(deleteTag);
   } catch (err) {
     res.status(500).json(err);
   }
