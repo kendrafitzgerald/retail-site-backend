@@ -11,9 +11,9 @@ To install this app, git clone the repository into your terminal. Steps for usag
 
 ## Usage
 
-Once you have cloned the repository into your terminal, enter the MySql shell by running the following: mysql -u root -p. Once you enter your password, run SOURCE db/schema.sql to drop the database if it already exists and recreate it. Then enter quit to exit the mysql shell. In your terminal, run seeds/index.js to seed your database. Next, run node server.js to run your server. To view the routes present in the code, navigate to insomnia and enter the HTTP route for each route you are trying to hit. Below is a video walkthrough of the steps to use this application as well as the insomina routes. 
+Once you have cloned the repository into your terminal, enter the MySql shell by running the following: mysql -u root -p. Once you enter your password, run SOURCE db/schema.sql to drop the database if it already exists and recreate it. Then enter quit to exit the mysql shell. In your terminal, run node seeds/index.js to seed your database. Next, run node server.js to run your server. To view the routes present in the code, navigate to insomnia and enter the HTTP route for each route you are trying to hit. Below is a video walkthrough of the steps to use this application as well as the insomina routes. 
 
-[E-Commerce Site WalkThrough Video](https://drive.google.com/file/d/1021oq46Y8lBKSgSUY8Tk5jOaK8HrlXpN/view)
+[E-Commerce Site WalkThrough Video](https://drive.google.com/file/d/1_kFuxWHGs3zQUN6mxhiX3tIs1mbWMgC1/view)
 
 ## Credits
 
